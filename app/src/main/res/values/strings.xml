@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TAKUNA_App</string>
+
+    <!-- Strings Login TAKUNA -->
+
+    <string name="mensajeInicioLogin">Inicia sesión para acceder a nuestras funciones</string>
+    <string name="iniciarSesion">Iniciar sesión</string>
+    <string name="placeholderCorreoLogin">Correo electrónico o usuario</string>
+    <string name="placeholderClaveLogin">Contraseña</string>
+    <string name="olvidarClave">¿Olvidaste tu contraseña?</string>
+    <string name="noTienesCuenta">¿No tienes cuenta?</string>
+    <string name="linkRegistro">Registrate aquí</string>
+
+    <!-- Strings Registro TAKUNA -->
+
+    <string name="mensajeInicioRegistro">Registrate y disfruta de una experiencia de ecoturismo verdadera</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="placeholderCorreoElectronicoRegistro">Correo Electronico</string>
+    <string name="placeholderNombresRegistro">Nombres</string>
+    <string name="placeholderApellidosRegistro">Apellidos</string>
+    <string name="placeholderCelularRegistro">Celular</string>
+    <string name="placeholderClaveRegistro">Contraseña</string>
+    <string name="placeholderConfirmarClaveRegistro">Confirmar Contraseña</string>
+    <string name="yaTienesCuenta">¿Ya tienes cuenta?</string>
+    <string name="linkInicioSesion">Inicia sesión</string>
+
+    <!-- Strings Eleccion TAKUNA -->
+
+    <string name="bienvenidaUsuarioEleccion">Bienvenid@ nombre de usuario</string>
+    <string name="incognitaEleccion">¿A cual función desea acceder?</string>
+    <string name="avistamiento">Avistamiento</string>
+    <string name="senderismo">Senderismo</string>
+
+    <!-- Strings Buscador TAKUNA -->
+    <string name="categorias">Categorias</string>
+
+</resources>

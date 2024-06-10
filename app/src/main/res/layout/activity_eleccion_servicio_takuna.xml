@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_takuna1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".EleccionServicioTakunaActivity">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="115dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/logo_takuna"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/radio_a_treqer"
+            android:text="@string/bienvenidaUsuarioEleccion"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvIncognita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/radio_a_treqer"
+            android:gravity="center"
+            android:text="@string/incognitaEleccion"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+        <View
+            android:id="@+id/viewAvistamiento"
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/pajaro_avistamiento"
+            app:layout_constraintEnd_toStartOf="@id/viewSenderismo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvIncognita" />
+
+        <View
+            android:id="@+id/viewSenderismo"
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/pajaro_avistamiento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/viewAvistamiento"
+            app:layout_constraintTop_toBottomOf="@id/tvIncognita" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/radio_a_treqer"
+            android:gravity="center"
+            android:text="@string/avistamiento"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewAvistamiento" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="67dp"
+            android:fontFamily="@font/radio_a_treqer"
+            android:gravity="center"
+            android:text="@string/senderismo"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewSenderismo" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvHome"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/cvCuenta"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/radio_a_treqer"
+                android:text="Home"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cvHome"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

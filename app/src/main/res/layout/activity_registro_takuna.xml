@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo_takuna2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegistroTakunaActivity">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="115dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/logo_takuna"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvInfoRegistro"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/radio_a_treqer"
+            android:gravity="center"
+            android:text="@string/mensajeInicioRegistro"
+            android:textColor="@color/titulos_subtitulos_registro_login_app"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+        <TextView
+            android:id="@+id/tvRegistrarse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/red_hat_display_regular"
+            android:text="@string/registrarse"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvInfoRegistro" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvCorreoElectronicoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="17dp"
+            app:cardBackgroundColor="@color/fondo_cardview_login_registro"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRegistrarse">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/placeholder_login_registro"
+                android:fontFamily="@font/red_hat_display_regular"
+                android:hint="@string/placeholderCorreoElectronicoRegistro"
+                android:textColor="@color/placeholder_login_registro"
+                android:textColorHint="@color/placeholder_login_registro"
+                android:textSize="24dp"
+                android:textStyle="italic" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvNombreRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="17dp"
+            app:cardBackgroundColor="@color/fondo_cardview_login_registro"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvCorreoElectronicoRegistro">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/placeholder_login_registro"
+                android:fontFamily="@font/red_hat_display_regular"
+                android:hint="@string/placeholderNombresRegistro"
+                android:textColor="@color/placeholder_login_registro"
+                android:textColorHint="@color/placeholder_login_registro"
+                android:textSize="24dp"
+                android:textStyle="italic" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvApellidosRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="17dp"
+            app:cardBackgroundColor="@color/fondo_cardview_login_registro"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvNombreRegistro">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/placeholder_login_registro"
+                android:fontFamily="@font/red_hat_display_regular"
+                android:hint="@string/placeholderApellidosRegistro"
+                android:textColor="@color/placeholder_login_registro"
+                android:textColorHint="@color/placeholder_login_registro"
+                android:textSize="24dp"
+                android:textStyle="italic" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvCelularRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="17dp"
+            app:cardBackgroundColor="@color/fondo_cardview_login_registro"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvApellidosRegistro">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/placeholder_login_registro"
+                android:fontFamily="@font/red_hat_display_regular"
+                android:hint="@string/placeholderCelularRegistro"
+                android:textColor="@color/placeholder_login_registro"
+                android:textColorHint="@color/placeholder_login_registro"
+                android:textSize="24dp"
+                android:textStyle="italic" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvClaveRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="17dp"
+            app:cardBackgroundColor="@color/fondo_cardview_login_registro"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvCelularRegistro">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/placeholder_login_registro"
+                android:fontFamily="@font/red_hat_display_regular"
+                android:hint="@string/placeholderClaveRegistro"
+                android:textColor="@color/placeholder_login_registro"
+                android:textColorHint="@color/placeholder_login_registro"
+                android:textSize="24dp"
+                android:textStyle="italic" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvConfirmarClaveRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="17dp"
+            app:cardBackgroundColor="@color/fondo_cardview_login_registro"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvClaveRegistro">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/placeholder_login_registro"
+                android:fontFamily="@font/red_hat_display_regular"
+                android:hint="@string/placeholderConfirmarClaveRegistro"
+                android:textColor="@color/placeholder_login_registro"
+                android:textColorHint="@color/placeholder_login_registro"
+                android:textSize="24dp"
+                android:textStyle="italic" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/my_button_bg"
+            android:fontFamily="@font/red_hat_display_bold"
+            android:text="@string/registrarse"
+            android:textAllCaps="false"
+            android:textColor="@color/links_login_registro_app"
+            android:textSize="20sp"
+            app:backgroundTint="@color/boton_login_registro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cvConfirmarClaveRegistro" />
+
+        <TextView
+            android:id="@+id/tvNoCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/red_hat_display_bold"
+            android:text="@string/yaTienesCuenta"
+            android:textColor="@color/links_login_registro_app"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnIniciarSesion" />
+
+        <TextView
+            android:id="@+id/tvIniciarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/red_hat_display_light_italic"
+            android:text="@string/linkInicioSesion"
+            android:textColor="@color/links_login_registro_app"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/tvNoCuenta"
+            app:layout_constraintTop_toBottomOf="@id/btnIniciarSesion" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="73dp"
+            android:background="@color/links_login_registro_app"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvIniciarSesion" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
